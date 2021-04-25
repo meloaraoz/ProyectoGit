@@ -1,0 +1,291 @@
+
+
+$title-font: normal, sans-serif, 24px;
+$fondo: whitesmoke;
+$font: black, sans-serif;
+$maxwidth: 10rem;
+
+
+
+body {
+
+    font-size: 14pt;
+
+    background-color:rgb(0, 0, 0);
+
+    color: $fondo;
+
+}
+
+a {
+  color: black;
+  font-size: 20px;
+}
+
+footer {
+  background-color: $fondo;
+  color: black;
+}
+
+
+li {
+
+  text-decoration: none;
+
+  list-style: none;
+
+}
+
+
+
+h5 {
+
+  text-align: center;
+
+}
+
+p {
+  text-align: center;
+}
+
+
+
+.navbar-brand {
+
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+
+
+nav {
+  
+  color: black;
+
+}
+
+
+/*BEM Contacto */ 
+
+
+
+.contenedor{
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+
+
+.contenedor__contacto--mod {
+
+  margin: 3rem;
+
+  
+
+}
+
+
+
+.contenedor__contacto--boton {
+
+  padding: 3px;
+
+  color: $font ;
+
+  background-color: $fondo;
+
+  border: transparent;
+
+}
+
+
+
+ /* BEM iconos */ 
+
+.iconos {
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.iconos__pie {
+
+  padding: 6px;
+
+  
+
+}
+
+ /*BEM contenedor Imagenes  */ 
+
+
+
+.contenedor {
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+
+
+.contenedor__imagenes {
+
+ width: 100%;
+
+ max-width: 1400px;
+
+ margin-top: 3rem;
+
+ display: flex;
+
+ flex-wrap: wrap;
+
+ justify-content: center;
+
+
+
+}
+
+.contenedor__imagenes--modificador{
+
+  max-width: 20rem;
+
+  width: 100%;
+
+  margin-bottom: 1rem;
+
+  margin-left: 1rem;
+
+  
+
+}
+
+
+
+/*BEM botones para seleccion de TALLE */ 
+
+
+
+.boton__opcion {
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.boton__opcion--opcion {
+
+  padding: 2px;
+
+  margin: 4px;
+
+}
+
+.boton__opcion--titulo {
+
+  font-style: $font;
+
+  margin: 2px;
+
+}
+
+
+
+.preguntas {
+  background-color: black;
+}
+
+
+/*BEM Devoluciones */ 
+
+
+.devoluciones {
+  margin-top: 2rem;
+  padding: 1rem;
+  height: 40rem;
+}
+
+.devoluciones__lista {
+  font: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  
+
+}
+
+.devoluciones__lista--item {
+ margin: 3px; 
+font-size: 20px;
+}
+
+
+
+
+
+.card-body {
+  color: rgb(0, 0, 0);
+}
+
+.card {
+  background-color:whitesmoke;
+  color: rgb(0, 0, 0);
+    
+}
+
+
+.accordion {
+  height: 20rem;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: medium;
+}
+
+
+/* Error 404*/
+
+.paginaError {
+  text-align: center;
+  margin-top: 3rem;
+}
+#enlaceError {
+  color: violet;
+}
+
+/* Media con Operaciones */
+
+
+@media (min-width: 480px) {
+
+  .contenedor__imagenes--modificador {
+
+    max-width: $maxwidth;
+
+  }
+}
+@media (min-width:768px) {
+
+  .contenedor__imagenes--modificador{
+
+    max-width: $maxwidth * 2;
+
+  }
+}
+
+@media (min-width:1024px) {
+
+  .contenedor__imagenes--modificador{
+    max-width: $maxwidth * 3;
+  }
+
+} 
+
